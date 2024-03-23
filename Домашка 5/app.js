@@ -6,23 +6,34 @@
 // let responsive = true;
 // let sceensValue;
 
-// const asking = function () {
+// const asking = function() {
 //   titleProject = prompt("Название проекта?");
-//   screensValue = prompt(
-//     "Какой тип экрана: шаблонный, с уникальным дизайном, с анимациями?"
-//   );
+//   screensValue = prompt("Какой тип экрана: шаблонный, с уникальным дизайном, с анимациями?");
 //   responsive = confirm("Должен ли сайт быть респонсивный?");
-// };
-// asking();
+// }
+
 
 // let service1 = prompt("Какой сервис нужен?");
 // let servicePrice1 = prompt("Сколько это будет стоить?");
-// let service2 = prompt("Какой нужен дополнительный сервис?");
-// let servicePrice2 = prompt("Сколько будет стоить дополнительный сервис?");
+// let service2 = prompt("Какой нужен сервис?");
+// let servicePrice2 = prompt("Сколько будет стоить второй сервис?");
 
-// function getAllServicePrices() {
-//   return +servicePrice1 + +servicePrice2;
+
+// servicePercentPrice = Math.round(fullPrice - (percentage * fullPrice) / 100);
+
+// if (fullPrice >= 50000) {
+//   console.log("Скидка 10%");
+// } else if (fullPrice < 50000 && fullPrice >= 20000) {
+//   console.log("Скидка 5%");
+// } else if (fullPrice < 20000 && fullPrice >= 0) {
+//   console.log("Скидка не предусмотрена");
+// } else if (fullPrice < 0) {
+//   console.log("Что-то пошло не так");
 // }
+
+// let getAllServicePrices = function () {
+//   return +servicePrice1 + +servicePrice2;
+// };
 
 // function getFullPrice() {
 //   return +allServicePrices + +screenPrice;
@@ -47,7 +58,7 @@
 //   } else if (fullPrice < 0) return "Что-то пошло не так";
 // }
 
-// Проверка на число
+// Проверяем число ли это
 
 function checkIsNumber(value) {
   let parsedValue = parseFloat(value);
@@ -74,10 +85,13 @@ function getAllServicePrices() {
   console.log("Итого: " + sum);
 }
 
+// asking();
 getAllServicePrices();
-// servicePercentPrice = getServicePercetPrice();
-// let allServicePrices = getAllServicePrices();
 // fullPrice = getFullPrice();
+// servicePercentPrice = getServicePercetPrice();
+
+// let allServicePrices = getAllServicePrices();
+
 // titleProject = getTitle();
 
 // console.log("titleProject: " + titleProject);
